@@ -1,12 +1,16 @@
 {
 	"name": "fcc-learn-npm-package-json",
 	"author": "Tim Fung",
+	"homepage": "https://timfung893.github.io/BE-training/",
 	"dependencies": {
-		"express": "^4.14.0"
+		"express": "^4.14.0",
+		"gh-pages": "^5.0.0"
 	},
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"repository": {
 		"type": "git",
